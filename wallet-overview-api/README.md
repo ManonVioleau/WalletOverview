@@ -47,6 +47,14 @@ Once downloaded, open the terminal in the project directory, and continue with:
 ```
 pip install -r requirements.txt
 ```
+### MySQL SetUp
+
+Create a file in the "config" folder named "id_connect.py" and fill it like :
+login = 'your_mysql_login'
+password = 'your_mysql_password*'
+db_name = 'your_db_name'.
+
+Change the host name and other param in the db.py file if needed.
 
 ### Compiles and hot-reloads for development
 ```
