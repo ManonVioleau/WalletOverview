@@ -3,7 +3,7 @@
     <div class="section" v-if="connected && had_wallet && synchro">
       <div class="title">
         <h1>Wallets</h1>
-        <button v-on:click="add_wallet = true">Add a Wallet</button>
+        <router-link to="/AddWallet">Add a Wallet</router-link>
       </div>
       <div class="wallet-content">
         <div class="square">
@@ -91,5 +91,20 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+a {
+  background-color: #ffae42;
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #ffae42;
+  opacity: 0.75;
+}
 </style>
